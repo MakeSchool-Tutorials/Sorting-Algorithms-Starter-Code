@@ -21,5 +21,17 @@ def bike_parking():
 
     return render_template('table_view.html', title=title, headers=bp.headers, rows=bp.rows)
 
+@app.route("/salary_ranges")
+def salary_ranges():
+    bp = DataSource('data/Salary_Ranges_by_Job_Classification.csv')
+
+    return render_template('table_view.html', title=title, headers=bp.headers, rows=bp.rows)
+
+@app.route("/civic_art")
+def civic_art():
+    bp = DataSource('data/SF_Civic_Art_Collection.csv')
+
+    return render_template('table_view.html', title=title, headers=bp.headers, rows=bp.rows)
+
 if __name__ == "__main__":
     app.run()
