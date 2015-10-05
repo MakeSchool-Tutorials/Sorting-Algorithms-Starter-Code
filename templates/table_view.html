@@ -1,11 +1,14 @@
 {% extends "layout.html" %}
 {% block body %}
-  <table>
-    <tr>
-    {% for header in headers %}
-      <th>{{ header}}</th>
-    {% endfor %}
-    </tr>
+  <table class="pure-table pure-table-horizontal pure-table-striped">
+    <thead>
+      <tr>
+      {% for header in headers %}
+        <th>{{ header}}</th>
+      {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
     {% for row in rows %}
       <tr>
         {% for cell in row %}
@@ -13,6 +16,6 @@
         {% endfor %}
       </tr>
     {% endfor %}
+    </tbody>
   </table>
-
 {% endblock %}

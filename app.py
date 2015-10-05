@@ -18,9 +18,8 @@ def index():
 @app.route("/bike_parking")
 def bike_parking():
     bp = DataSource('data/Bicycle_Parking__Public_.csv')
-    page_title = title + ' : Bike Parking'
 
-    return render_template('table_view.html', title=page_title, headers=bp.headers, rows=bp.rows)
+    return render_template('table_view.html', title=title, headers=bp.headers, rows=bp.rows)
 
 if __name__ == "__main__":
     app.run()

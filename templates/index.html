@@ -1,7 +1,10 @@
 {% extends "layout.html" %}
 {% block body %}
-  <h2>Pick a data set:</h2>
-  <ul>
-    <li><a href="{{ url_for('bike_parking') }}">Bike Parking</a></li>
-  </ul>
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <p>
+        Select a data set to view.
+      </p>
+    </div>
+  </div>
 {% endblock %}
