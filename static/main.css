@@ -1,0 +1,24 @@
+* {
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+header h1 a {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
