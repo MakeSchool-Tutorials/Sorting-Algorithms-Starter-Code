@@ -1,4 +1,4 @@
-ADDRESS,LOCATION_NAME,STREET_NAME,RACKS,SPACES,PLACEMENT,MO_INSTALLED,YR_INSTALLED,COORDINATES
+Address,Location Name,Street Name,Racks,Spaces,Placement,Mo Installed,Yr Installed,Coordinates
 939 ELLIS ST,Bay Area Air Quality Management District (BAAQMD),ELLIS,2,4,SW,8,1997,"ELLIS
 (37.78346622, -122.42177834)"
 1380 HOWARD ST,San Francisco Department of Public Health,HOWARD,1,2,SW,UK,1998,"HOWARD
