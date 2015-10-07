@@ -1,33 +1,57 @@
 {% extends "layout.html" %}
 {% block body %}
   <div class="pure-g">
-    <div class="pure-u-1-2">
-      <h3>{{ title }}</h3>
+    <div class="pure-u-1-1 l-box">
+      <h1>{{ title }}</h1>
     </div>
-    <div class="pure-u-1-2">
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-1-2 l-box">
+
+      <table class="pure-table pure-table-horizontal">
+        <tbody>
+          <tr>
+            <td>Number of rows in set</td>
+            <td>{{ row_count }}</td>
+          </tr>
+          <tr>
+            <td>Runtime for last sort (seconds)</td>
+            <td>{{ ex_time }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pure-u-1-2 l-box">
       <form class="pure-form" action="{{ request.base_url }}" method="GET">
         <fieldset>
           <label for="sortings">Sort By</label>
           <select id="sortings" name="sort_by">
             {% for sorting in sortings %}
-              <option>{{ sorting }}</option>
+              {% if sorting == sort_by %}
+                <option selected>{{ sorting }}</option>
+              {% else %}
+                <option>{{ sorting }}</option>
+              {% endif %}
             {% endfor %}
           </select>
 
           <button type="submit" class="pure-button pure-button-primary">Go</button>
         </fieldset>
       </form>
-      <p>
-        Time for last sort: <strong>{{ ex_time }}</strong> seconds
-      </p>
     </div>
   </div>
+
+  <hr>
 
   <table class="pure-table pure-table-horizontal pure-table-striped">
     <thead>
       <tr>
       {% for header in headers %}
-        <th>{{ header}}</th>
+        {% if header == sort_by %}
+          <th class="sorted">{{ header }}</th>
+        {% else %}
+          <th>{{ header}}</th>
+        {% endif %}
       {% endfor %}
       </tr>
     </thead>
