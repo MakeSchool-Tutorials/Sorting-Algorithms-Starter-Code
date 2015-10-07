@@ -11,7 +11,7 @@ def timed_sort(list, key, algorithm='insertion'):
 # ---
 # Define your search algorithm functions here!
 
-def insertion(list, key):
+def insertion(list, key=lambda item: item):
     size = len(list)
     for i in range(1, size):
         for j in range(i, 0, -1):
