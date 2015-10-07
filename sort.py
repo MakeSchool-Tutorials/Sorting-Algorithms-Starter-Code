@@ -14,13 +14,11 @@ def timed_sort(list, key, algorithm='insertion'):
 def insertion(list, key):
     size = len(list)
     for i in range(1, size):
-        j = i
-        while j > 0:
+        for j in range(i, 0, -1):
             compare = list[j - 1]
             current = list[j]
             if key(current) < key(compare):
                 list[j] = compare
                 list[j - 1] = current
-            j -= 1
 
     return list
