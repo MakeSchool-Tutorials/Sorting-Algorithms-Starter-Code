@@ -8,7 +8,7 @@
       <p>
         Sort by:
         {% for sorting in sortings %}
-          <a class="pure-button" href="{{ url_for(request.endpoint, sort_by=sorting) }}">{{ sorting }}</a>
+          <a class="pure-button" href="{{ request.base_url }}?sort_by={{ sorting }}">{{ sorting }}</a>
         {% endfor %}
       </p>
     </div>
