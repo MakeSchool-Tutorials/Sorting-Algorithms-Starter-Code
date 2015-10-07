@@ -4,12 +4,35 @@ Example implementation of the Sorting Algorithms project for MakeSchool.
 
 ## Getting Started
 
-Must have Python 3.4 and virtualenv installed.
+_Note: must have Python 3.4 and virtualenv installed._
+
+Clone and setup the repository (initializes virtual environment):
 
 ```shell-session
 $ git clone GIT_URL
 $ cd Sorting-Algorithms-Example
 $ source ./setup.sh
+```
+
+Make sure that you're using the Python executable in `./venv/bin/`:
+
+```shell-session
+$ which python
+/path/to/project/venv/bin/python
+```
+
+Install package dependencies:
+
+```shell-session
+$ pip install -r requirements.txt
+```
+
+Start the web server:
+
+```shell-session
+$ python app.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ ...
 ```
 
 ## Data Sources

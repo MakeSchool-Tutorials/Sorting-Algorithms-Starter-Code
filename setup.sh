@@ -14,7 +14,9 @@ if (! command -v virtualenv > /dev/null 2>&1); then
 fi
 
 if [ ! -d $VENV_DIR ]; then
+  echo "Setting up virtualenv directory in $VENV_DIR..."
   virtualenv $VENV_DIR -p $PYTHON_EXE
 fi
 
+echo "Activating virtualenv..."
 source $VENV_DIR/bin/activate
