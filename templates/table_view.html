@@ -5,12 +5,18 @@
       <h3>{{ title }}</h3>
     </div>
     <div class="pure-u-1-2">
-      <p>
-        Sort by:
-        {% for sorting in sortings %}
-          <a class="pure-button" href="{{ request.base_url }}?sort_by={{ sorting }}">{{ sorting }}</a>
-        {% endfor %}
-      </p>
+      <form class="pure-form" action="{{ request.base_url }}" method="GET">
+        <fieldset>
+          <label for="sortings">Sort By</label>
+          <select id="sortings" name="sort_by">
+            {% for sorting in sortings %}
+              <option>{{ sorting }}</option>
+            {% endfor %}
+          </select>
+
+          <button type="submit" class="pure-button pure-button-primary">Go</button>
+        </fieldset>
+      </form>
       <p>
         Time for last sort: <strong>{{ ex_time }}</strong> seconds
       </p>
