@@ -22,7 +22,7 @@ def data_view(data_set_name):
 
     if 'sort_by' in request.args:
         col_idx = data.headers.index(request.args['sort_by'])
-        rows, ex_time = timed_sort(data.rows, key=lambda r: r[col_idx])
+        rows, ex_time = timed_sort(rows, key=lambda r: r[col_idx])
 
     return render_template('table_view.html', title='Bike Parking', headers=data.headers, rows=rows, sortings=data.sortings, ex_time=ex_time)
 
