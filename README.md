@@ -1,6 +1,6 @@
 # Sorting Algorithms [Starter Code]
 
-Starter code for the Sorting Algorithms project for MakeSchool.
+Starter code for the [Sorting Algorithms project](https://github.com/MakeSchool-Tutorials/Sorting-Algorithms-Python) for MakeSchool.
 
 ## Getting Started
 
@@ -9,8 +9,8 @@ _Note: must have Python 3.4 and virtualenv installed._
 Clone and setup the repository (initializes virtual environment):
 
 ```shell-session
-$ git clone GIT_URL
-$ cd Sorting-Algorithms-Example
+$ git clone https://github.com/MakeSchool-Tutorials/Sorting-Algorithms-Starter-Code.git
+$ cd Sorting-Algorithms-Starter-Code
 $ source ./setup.sh
 ```
 
