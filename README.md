@@ -1,6 +1,6 @@
-# Sorting Algorithms [Example Project]
+# Sorting Algorithms [Starter Code]
 
-Example implementation of the Sorting Algorithms project for MakeSchool.
+Starter code for the Sorting Algorithms project for MakeSchool.
 
 ## Getting Started
 
