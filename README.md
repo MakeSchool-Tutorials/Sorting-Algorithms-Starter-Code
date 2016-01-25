@@ -4,7 +4,7 @@ Starter code for the [Sorting Algorithms project](https://github.com/MakeSchool-
 
 ## Getting Started
 
-_Note: must have Python 3.4 and virtualenv installed._
+_Note: must have Python 3.4 or greater and virtualenv installed._
 
 Clone and setup the repository (initializes virtual environment):
 
